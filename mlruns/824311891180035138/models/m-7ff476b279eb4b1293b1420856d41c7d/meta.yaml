@@ -1,0 +1,10 @@
+artifact_location: file:///home/surya/telco_churn_prediction/mlruns/824311891180035138/models/m-7ff476b279eb4b1293b1420856d41c7d/artifacts
+creation_timestamp: 1763107226704
+experiment_id: '824311891180035138'
+last_updated_timestamp: 1763107230298
+model_id: m-7ff476b279eb4b1293b1420856d41c7d
+model_type: null
+name: model
+source_run_id: 0fa39fe2be3d4ecd8d35d483128e6aaa
+status: 2
+status_message: null
