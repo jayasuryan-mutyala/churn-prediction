@@ -49,10 +49,11 @@ def train_model(df:pd.DataFrame,target_col:str):
 
 
 # if __name__ == '__main__':
-#     df = load_data('/home/surya/telco_churn_prediction/data/raw/churn_data.csv')
-#     # print(df.head())
+#     RAW = os.path.join('data','raw','churn_data.csv')
+#     df = load_data(RAW)
+#     print(df.head())
 #     preprocessed_data = preprocess_data(df)
-#     # print(preprocessed_data.head())
+#     print(preprocessed_data.head())
 
 #     cleaned_data = build_features(preprocessed_data)
 #     # print(cleaned_data.head())
@@ -60,8 +61,3 @@ def train_model(df:pd.DataFrame,target_col:str):
 #     train_model(cleaned_data,target_col='Churn')
 
 
-# Note when we make call mlflow ui via terminal use this command 
-# mlflow ui \
-#   --backend-store-uri sqlite:////home/surya/mlflow.db \
-#   --default-artifact-root file:///home/surya/mlruns \
-#   --host 127.0.0.1 --port 5000

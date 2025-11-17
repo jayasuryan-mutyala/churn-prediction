@@ -1,0 +1,5 @@
+# Note when we make call mlflow ui via terminal use this command 
+# mlflow ui \
+#   --backend-store-uri sqlite:////home/surya/mlflow.db \
+#   --default-artifact-root file:///home/surya/mlruns \
+#   --host 127.0.0.1 --port 5000

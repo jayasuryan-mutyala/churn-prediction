@@ -21,5 +21,6 @@ def load_data(file_path: str) -> pd.DataFrame:
     
 
 # if __name__ == '__main__':
-#     df = load_data('/home/surya/telco_churn_prediction/data/raw/churn_data.csv')
+#     RAW = os.path.join('data','raw','churn_data.csv')
+#     df = load_data(RAW)
 #     print(df.head())

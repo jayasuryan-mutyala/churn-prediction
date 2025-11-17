@@ -34,7 +34,8 @@ def preprocess_data(df:pd.DataFrame,target_col:str = "Churn") -> pd.DataFrame:
 
 
 # if __name__ == '__main__':
-#     df = load_data('/home/surya/telco_churn_prediction/data/raw/churn_data.csv')
-#     # print(df.head())
+#     RAW = os.path.join('data','raw','churn_data.csv')
+#     df = load_data(RAW)
+#     print(df.head())
 #     preprocessed_data = preprocess_data(df)
 #     print(preprocessed_data.head())

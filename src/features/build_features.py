@@ -78,11 +78,11 @@ def build_features(df:pd.DataFrame,target_col:str = "Churn") -> pd.DataFrame:
     print(f"Feature engineering complete: {df.shape[1]} final features")
     return df
 
-if __name__ == '__main__':
-    df = load_data('/home/surya/telco_churn_prediction/data/raw/churn_data.csv')
-    # print(df.head())
-    preprocessed_data = preprocess_data(df)
-    print(preprocessed_data.head())
-
-    cleaned_data = build_features(preprocessed_data)
-    print(cleaned_data.head())
+# if __name__ == '__main__':
+#     RAW = os.path.join('data','raw','churn_data.csv')
+#     df = load_data(RAW)
+#     print(df.head())    # print(df.head())
+#     preprocessed_data = preprocess_data(df)
+#     print(preprocessed_data.head())
+#     cleaned_data = build_features(preprocessed_data)
+#     print(cleaned_data.head())
