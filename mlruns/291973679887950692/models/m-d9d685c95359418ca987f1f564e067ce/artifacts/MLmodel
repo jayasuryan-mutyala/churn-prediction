@@ -1,0 +1,22 @@
+artifact_path: file:///home/surya/telco_churn_prediction/mlruns/291973679887950692/models/m-d9d685c95359418ca987f1f564e067ce/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.12
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.1.1
+mlflow_version: 3.6.0
+model_id: m-d9d685c95359418ca987f1f564e067ce
+model_size_bytes: 812592
+model_uuid: m-d9d685c95359418ca987f1f564e067ce
+prompts: null
+run_id: 244815ce217a4eb6909ef81dd0b73834
+utc_time_created: '2025-11-17 08:02:07.734383'

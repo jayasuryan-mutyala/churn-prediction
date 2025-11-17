@@ -1,0 +1,58 @@
+artifact_path: /home/surya/telco_churn_prediction/mlruns/1/models/m-356c37ddc00d4f5a96ce6409d4505cad/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.12.12
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: ubj
+    xgb_version: 3.1.1
+is_signature_from_type_hint: false
+mlflow_version: 3.6.0
+model_id: m-356c37ddc00d4f5a96ce6409d4505cad
+model_size_bytes: 316376
+model_uuid: m-356c37ddc00d4f5a96ce6409d4505cad
+prompts: null
+run_id: 6e8305d7473a4fcf807dfb025d625058
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "gender", "required": true}, {"type": "double",
+    "name": "SeniorCitizen", "required": true}, {"type": "double", "name": "Partner",
+    "required": true}, {"type": "double", "name": "Dependents", "required": true},
+    {"type": "double", "name": "tenure", "required": true}, {"type": "double", "name":
+    "PhoneService", "required": true}, {"type": "double", "name": "PaperlessBilling",
+    "required": true}, {"type": "double", "name": "MonthlyCharges", "required": true},
+    {"type": "double", "name": "TotalCharges", "required": true}, {"type": "boolean",
+    "name": "MultipleLines_No phone service", "required": true}, {"type": "boolean",
+    "name": "MultipleLines_Yes", "required": true}, {"type": "boolean", "name": "InternetService_Fiber
+    optic", "required": true}, {"type": "boolean", "name": "InternetService_No", "required":
+    true}, {"type": "boolean", "name": "OnlineSecurity_No internet service", "required":
+    true}, {"type": "boolean", "name": "OnlineSecurity_Yes", "required": true}, {"type":
+    "boolean", "name": "OnlineBackup_No internet service", "required": true}, {"type":
+    "boolean", "name": "OnlineBackup_Yes", "required": true}, {"type": "boolean",
+    "name": "DeviceProtection_No internet service", "required": true}, {"type": "boolean",
+    "name": "DeviceProtection_Yes", "required": true}, {"type": "boolean", "name":
+    "TechSupport_No internet service", "required": true}, {"type": "boolean", "name":
+    "TechSupport_Yes", "required": true}, {"type": "boolean", "name": "StreamingTV_No
+    internet service", "required": true}, {"type": "boolean", "name": "StreamingTV_Yes",
+    "required": true}, {"type": "boolean", "name": "StreamingMovies_No internet service",
+    "required": true}, {"type": "boolean", "name": "StreamingMovies_Yes", "required":
+    true}, {"type": "boolean", "name": "Contract_One year", "required": true}, {"type":
+    "boolean", "name": "Contract_Two year", "required": true}, {"type": "boolean",
+    "name": "PaymentMethod_Credit card (automatic)", "required": true}, {"type": "boolean",
+    "name": "PaymentMethod_Electronic check", "required": true}, {"type": "boolean",
+    "name": "PaymentMethod_Mailed check", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-11-17 08:21:08.672548'

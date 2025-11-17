@@ -1,0 +1,14 @@
+artifact_uri: file:///home/surya/telco_churn_prediction/mlruns/291973679887950692/244815ce217a4eb6909ef81dd0b73834/artifacts
+end_time: 1763366530450
+entry_point_name: ''
+experiment_id: '291973679887950692'
+lifecycle_stage: active
+run_id: 244815ce217a4eb6909ef81dd0b73834
+run_name: dashing-hen-771
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763366485066
+status: 3
+tags: []
+user_id: surya
