@@ -1,0 +1,14 @@
+artifact_path: /home/surya/telco_churn_prediction/mlruns/2/models/m-d260922abe4d4347a502d501a22d530b/artifacts
+flavors:
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.6.0
+model_id: m-d260922abe4d4347a502d501a22d530b
+model_size_bytes: 57
+model_uuid: m-d260922abe4d4347a502d501a22d530b
+prompts: null
+run_id: d16f93da1a0742c889f73713fc7dbb55
+utc_time_created: '2025-11-18 05:39:14.938529'
