@@ -43,7 +43,13 @@ def main(args):
     mlflow.set_experiment(args.experiment)  # Creates experiment if doesn't exist
 
     # Start MLflow run - all subsequent logging will be tracked under this run
-    with mlflow.start_run():
+    with mlflow.start_run() as run:
+        run_id = run.info.run_id
+        print("RUN ID:", run_id)
+        print("Tracking URI:", mlflow.get_tracking_uri())
+        print("Artifact URI for this run:", mlflow.get_artifact_uri())
+
+
         # === Log hyperparameters and configuration ===
         # REQUIRED: These parameters are essential for model reproducibility
         mlflow.log_param("model", "xgboost")           # Model type for comparison
@@ -67,7 +73,7 @@ def main(args):
         print(f"Processed dataset saved to {processed_path} | Shape: {df.shape}")
 
         # === STAGE 3: Feature Engineering - CRITICAL for Model Performance ===
-        print("🛠️  Building features...")
+        print(" Building features...")
         target = args.target
         if target not in df.columns:
             raise ValueError(f"Target column '{target}' not found in data")
@@ -208,7 +214,7 @@ def main(args):
 if __name__ == "__main__":
     p = argparse.ArgumentParser(description="Run churn pipeline with XGBoost + MLflow")
     p.add_argument("--input", type=str, required=True,
-                   help="path to CSV (e.g., data/raw/Telco-Customer-Churn.csv)")
+                   help="path to CSV (e.g., data/raw/churn_data.csv)")
     p.add_argument("--target", type=str, default="Churn")
     p.add_argument("--threshold", type=float, default=0.35)
     p.add_argument("--test_size", type=float, default=0.2)
@@ -218,12 +224,3 @@ if __name__ == "__main__":
 
     args = p.parse_args()
     main(args)
-
-"""
-# Use this below to run the pipeline:
-
-python scripts/run_pipeline.py \                                            
-    --input data/raw/Telco-Customer-Churn.csv \
-    --target Churn
-
-"""

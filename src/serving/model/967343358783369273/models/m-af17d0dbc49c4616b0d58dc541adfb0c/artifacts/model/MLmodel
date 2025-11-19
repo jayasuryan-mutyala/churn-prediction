@@ -1,0 +1,22 @@
+artifact_path: file:///home/surya/telco_churn_prediction/mlruns/967343358783369273/models/m-af17d0dbc49c4616b0d58dc541adfb0c/artifacts/model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.12
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.6.0
+model_id: m-af17d0dbc49c4616b0d58dc541adfb0c
+model_size_bytes: 1380186
+model_uuid: m-af17d0dbc49c4616b0d58dc541adfb0c
+prompts: null
+run_id: 28820b9f995946eda2f99b09bba86b03
+utc_time_created: '2025-11-19 09:48:17.380775'

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/surya/telco_churn_prediction/mlruns/967343358783369273/28820b9f995946eda2f99b09bba86b03/artifacts
+end_time: 1763545699990
+entry_point_name: ''
+experiment_id: '967343358783369273'
+lifecycle_stage: active
+run_id: 28820b9f995946eda2f99b09bba86b03
+run_name: shivering-snake-260
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763545677022
+status: 3
+tags: []
+user_id: surya
