@@ -18,4 +18,3 @@ optuna
 statsmodels
 gradio
 posthog
--e .

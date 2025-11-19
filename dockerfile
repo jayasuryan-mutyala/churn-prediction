@@ -5,15 +5,15 @@ FROM python:3.12.12-slim
 WORKDIR /app
 
 # Copy only dependency file first
-COPY requirements.txt
+COPY requirements.txt .
 
 # Install Python dependencies 
-RUN pip install --upgrade pi \
+RUN pip install --upgrade pip \
     && pip install -r requirements.txt \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Copy entire project into docker image 
-COPY ..
+COPY . .
 
 # Explicitely copy the model 
 # Note the destination has been changed to match inference.py path 
