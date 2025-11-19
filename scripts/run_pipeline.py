@@ -7,6 +7,9 @@ import joblib
 
 import pandas as pd 
 import mlflow 
+import mlflow.xgboost 
+import mlflow.sklearn
+
 from posthog import project_root 
 
 from sklearn.model_selection import train_test_split
@@ -146,7 +149,18 @@ def main(args):
         print(f"F1 score: {f1:.3f} | ROC-AUC: {roc_auc:.3f}")
 
         print("Saving model to MLflow..")
-        mlflow.sklearn.log_model("Model saved to MLFlow for serving pipeline")
+        local_feature_file = os.path.join(artifact_dir,"feature_columns.txt")
+        
+        with open(local_feature_file,'w') as f:
+            f.write('\n'.join(feature_cols))
+        
+        mlflow.xgboost.log_model(model,artifact_path='model')
+        mlflow.log_artifact(local_feature_file)
+        json_feature_file = os.path.join(artifact_dir, "feature_columns.json")
+        if os.path.exists(json_feature_file):
+            mlflow.log_artifact(json_feature_file)
+
+
 
         print("Performance Summary:")
         print(f"Training time: {train_time:.2f}s")

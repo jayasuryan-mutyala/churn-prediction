@@ -144,6 +144,16 @@ ENV/
 env.bak/
 venv.bak/
 
+# Big artifacts we don't want in git 
+mlruns/
+artifacts/
+data/raw/
+data/preprocessed/
+
+# Keep bundeled serving model in repo 
+!src/serving/model/
+!src/serving/model/**
+
 # Spyder project settings
 .spyderproject
 .spyproject

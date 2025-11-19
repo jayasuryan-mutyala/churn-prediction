@@ -16,5 +16,6 @@ xgboost
 lightgbm 
 optuna
 statsmodels
+gradio
 posthog
 -e .
