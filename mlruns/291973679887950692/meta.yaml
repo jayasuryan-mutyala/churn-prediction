@@ -1,6 +1,0 @@
-artifact_location: file:///home/surya/telco_churn_prediction/mlruns/291973679887950692
-creation_time: 1763366484883
-experiment_id: '291973679887950692'
-last_update_time: 1763366484883
-lifecycle_stage: active
-name: telco_churn_prediction

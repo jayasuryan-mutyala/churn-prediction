@@ -25,8 +25,6 @@ def train_model(df:pd.DataFrame,target_col:str):
                           n_jobs=-1,
                           eval_metric='logloss')
     
-    mlflow.set_tracking_uri("sqlite:////home/surya/mlflow.db")
-    mlflow.set_experiment('telco_churn_prediction')
     
     with mlflow.start_run(run_name='XGBoost clf'):
         # train model
