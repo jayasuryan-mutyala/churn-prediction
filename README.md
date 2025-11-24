@@ -17,5 +17,4 @@ Built an  end-to-end machine-learning solution for predicting customer churn ana
 - Inference service: FastAPI app exposing /predict (POST) and a root health check /.
 - Web UI: Gradio interface mounted at /ui for quick, shareable manual testing.
 - Containerization: Docker image with uvicorn entrypoint (src.app.main:app) listening on port 8000.
-- CI/CD: GitHub Actions builds the image and pushes to Docker Hub; optionally triggers an ECS service update.
-
+- CI/CD: GitHub Actions automates the creation docker image and pushes it to dockerhub. 
