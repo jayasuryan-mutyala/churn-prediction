@@ -157,7 +157,6 @@ demo = gr.Interface(fn=gradio_interface,
          "Yes", "No", "No", "Two year", "No", "Credit card (automatic)",
          60, 45.0, 2700.0]
     ],
-    theme=gr.themes.Soft()  # Professional appearance
 )
 
 app = gr.mount_gradio_app(
