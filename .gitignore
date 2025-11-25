@@ -145,6 +145,8 @@ env.bak/
 venv.bak/
 
 .aws
+aws/
+awscliv2.zip
 
 # Big artifacts we don't want in git 
 mlruns/
