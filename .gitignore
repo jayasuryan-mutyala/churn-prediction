@@ -144,6 +144,8 @@ ENV/
 env.bak/
 venv.bak/
 
+.aws
+
 # Big artifacts we don't want in git 
 mlruns/
 artifacts/
